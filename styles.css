@@ -1,0 +1,82 @@
+/* this css adds a 3-d effect to text */
+
+p {
+    color: #d75383;
+    font-size: 7em;
+    text-shadow: 
+    0px 1px 0px #ae2155, 
+    0px 2px 0px #ae2155, 
+    0px 3px 0px #ae2155,
+    0px 4px 0px #ae2155,
+    0px 5px 0px #ae2155,
+    0px 6px 0px #ae2155,
+    0px 7px 0px #ae2155,
+    0px 8px 0px #ae2155,
+    0px 9px 0px #ae2155,
+    0px 10px 0px #ae2155,
+    0px 10px 5px #2e0916;
+}
+
+/* This css creates highlight hover effect */
+
+.highlight {
+    display: inline-block;
+    cursor: pointer;
+    background-image:
+        linear-gradient(#e75ad4, #e75ad4);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 10px 100%;
+    transition: 
+        background-size 0.5s,
+        background-position .3s 0.5s
+}
+
+.highlight:hover {
+    background-size: 100% 100%;
+    background-position: 100% 0;
+    transition: 
+        background-position .3s,
+        background-size 0.5s .3s;
+}
+
+
+/* This css has a modal that disappears and appears when you click open or close */
+#modal {
+    background: rgba(0,0,0,.4);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    visibility: hidden;
+}
+
+#modal .content {
+    display: block;
+    background: #fff;
+    width: 360px;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.05);
+    margin-top: 120px;
+    margin: 120px auto;
+    
+}
+
+#modal:target {
+    visibility: visible;
+}
+
+a {
+    color: white;
+    background-color: turquoise;
+    padding: 20px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    text-align: center;
+}
+
+.cssmodal {
+    text-align: center;
+}
